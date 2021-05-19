@@ -1,0 +1,15 @@
+.main-product-detail__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 930px;
+}
+
+.main-product-detail__list li {
+  margin-right: 20px;
+}
+
+.plans-container--slider {
+  justify-content: center;
+}
