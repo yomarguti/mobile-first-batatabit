@@ -151,8 +151,9 @@ main {
 }
 .main--tables-container {
   display: flex;
+
   width: 100%;
-  margin-right: 20px;
+  margin-right: 60px;
   overflow-x: scroll;
   overflow-y: hidden;
   overscroll-behavior-x: contain;
@@ -169,6 +170,20 @@ main {
   margin: 5px 40px 0;
   padding: 0 42px;
   scroll-snap-align: center;
+}
+
+@media (min-width: 450px) {
+  .main--tables-container {
+    margin-right: 0px;
+    justify-content: space-evenly;
+  }
+
+  .main--tables-container .table {
+    min-width: 220px;
+    width: 220px;
+    margin: 5px 5px 0;
+    padding: 0 10px;
+  }
 }
 
 .main--table-title {
@@ -220,6 +235,12 @@ main {
 .main--table .left-arrow {
   left: -40px;
   transform: rotate(90deg);
+}
+
+@media (min-width: 410px) {
+  .main--table .arrow {
+    display: none;
+  }
 }
 
 .main--table .row:last-child {
